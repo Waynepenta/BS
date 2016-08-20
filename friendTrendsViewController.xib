@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="friendTrendsViewController">
+            <connections>
+                <outlet property="registerBtn" destination="3cb-ZA-6NC" id="yZu-eY-f5U"/>
+                <outlet property="view" destination="iN0-l3-epB" id="p1x-ha-CgL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header_cry_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="rTZ-lh-5Vl">
+                    <rect key="frame" x="276" y="171" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="AZl-r1-aAM"/>
+                        <constraint firstAttribute="width" constant="48" id="Y93-kZ-u9G"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whl-ow-rko">
+                    <rect key="frame" x="185" y="259" width="230" height="82"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="k8N-P2-w30"/>
+                    </constraints>
+                    <string key="text">多拉涉及到覅的答复撒地方撒地方撒地方
+手动 是打发撒地方
+撒地方阿萨德 
+11</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.35178340409999997" blue="0.16160508100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-ZA-6NC">
+                    <rect key="frame" x="176" y="381" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="LEl-c6-aq2"/>
+                        <constraint firstAttribute="height" constant="40" id="yUc-Af-QoG"/>
+                    </constraints>
+                    <state key="normal" title="立即登录注册" backgroundImage="friendsTrend_login.png">
+                        <color key="titleColor" red="1" green="0.089316518380000001" blue="0.096301564569999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="friendsTrend_login_click.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="registerBtn:" destination="-1" eventType="touchUpInside" id="ppn-B9-313"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3cb-ZA-6NC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="A7o-aq-uZL"/>
+                <constraint firstItem="Whl-ow-rko" firstAttribute="top" secondItem="rTZ-lh-5Vl" secondAttribute="bottom" constant="40" id="Pvz-eN-ry6"/>
+                <constraint firstItem="Whl-ow-rko" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UQy-tK-db0"/>
+                <constraint firstItem="rTZ-lh-5Vl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fio-3p-R5e"/>
+                <constraint firstItem="Whl-ow-rko" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hmk-Ex-ZJm"/>
+                <constraint firstItem="3cb-ZA-6NC" firstAttribute="top" secondItem="Whl-ow-rko" secondAttribute="bottom" constant="40" id="utu-FZ-FLi"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login.png" width="243" height="48"/>
+        <image name="friendsTrend_login_click.png" width="243" height="48"/>
+        <image name="header_cry_icon.png" width="48" height="48"/>
+    </resources>
+</document>

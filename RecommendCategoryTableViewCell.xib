@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="RecommendCategoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYC-4b-SdA">
+                        <rect key="frame" x="0.0" y="0.0" width="5" height="94"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="EhZ-Bk-OMC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hYC-4b-SdA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HMs-pp-la3"/>
+                    <constraint firstItem="hYC-4b-SdA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JzV-T2-iEr"/>
+                    <constraint firstAttribute="bottom" secondItem="hYC-4b-SdA" secondAttribute="bottom" id="S2c-ip-YOh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectBg" destination="hYC-4b-SdA" id="UNa-hW-wZH"/>
+            </connections>
+            <point key="canvasLocation" x="404.5" y="312.5"/>
+        </tableViewCell>
+    </objects>
+</document>

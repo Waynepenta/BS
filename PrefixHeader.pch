@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  BS
+//
+//  Created by lanou on 16/8/1.
+//  Copyright © 2016年 lanou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIImage+Extension.h"
+#import "UIView+XMGExtension.h"
+#import "UITabBarItem+Extension.h"
+#import "UIBarButtonItem+Exstension.h"
+#import "customNavigationController.h"
+#import "NSDate+Extension.h"
+
+#endif /* PrefixHeader_pch */
